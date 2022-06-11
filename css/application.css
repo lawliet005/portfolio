@@ -4803,3 +4803,21 @@ main {
     -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
   color: #fff;
 }
+.error .form-loader .form-message-content .form-m{
+  display: none;
+}
+
+.error .form-loader .form-message-content .form-e{
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
+    serif;
+  font-size: 1.5625em;
+  transition: -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s,
+    -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  color: #fff;
+}
+.success .form-loader .form-message-content .form-e{
+  display: none;
+}
+
