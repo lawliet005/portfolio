@@ -4792,3 +4792,16 @@ main {
 .form-message{
   display: none!important;
 }
+
+.form-m{
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
+    serif;
+  font-size: 1.5625em;
+  -webkit-transform: translate3d(0, 120%, 0);
+  transform: translate3d(0, 120%, 0);
+  transition: -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s,
+    -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
+  color: #fff;
+}
