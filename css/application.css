@@ -4793,7 +4793,7 @@ main {
   display: none!important;
 }
 
-.form-m{
+.success .form-loader .form-message-content .form-m{
   font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
     serif;
   font-size: 1.5625em;
