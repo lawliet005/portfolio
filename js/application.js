@@ -6291,13 +6291,8 @@ var Util = (function (t) {
         });
       },
       u = function () {
-        var e = t(document).find("title").text(),
-          i = "Be sure to checkout this before closing the internet :P";
-        document.addEventListener("visibilitychange", function () {
-          document.hidden
-            ? t(document).find("title").text(i)
-            : t(document).find("title").text(e);
-        });
+        var e = t(document).find("title").text()
+          ;
       },
       h = function (t) {
         ga("set", "page", t), ga("send", "pageview");
@@ -6305,7 +6300,15 @@ var Util = (function (t) {
       c = function (t, e, i) {
         i ? ga("send", "event", t, e, i) : ga("send", "event", t, e);
       },
-
+      f = function () {
+        console.info(),
+          console.info(
+            
+          ),
+          console.info(
+            
+          );
+      },
       p = function () {
         o(), a(), r(), s(), n(), l();
       };

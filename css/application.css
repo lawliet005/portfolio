@@ -702,6 +702,7 @@ button[disabled] {
 }
 .the-button {
   font-family: League Spartan, Helvetica, Arial, sans-serif;
+  margin-top: 10px;
   font-size: 0.875em;
   letter-spacing: 3px;
   padding: 12px 20px;
@@ -913,8 +914,8 @@ button[disabled] {
   margin: 15px 0;
 }
 .social-vertical-stripe svg {
-  width: 23px;
-  height: 23px;
+  width: 38px;
+  height: 38px;
 }
 .social-vertical-stripe svg path {
   fill: #b0b2c3;
@@ -2527,28 +2528,28 @@ textarea {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .experiment:nth-child(3) .experiment-image {
-  background-image: url(../img/brick.png);
+  background-image: url(../img/button.PNG);
 }
 @media only screen and (min-width: 64em) {
   .experiment:first-child .experiment-image {
-    background-image: url(../img/codepen-loader.gif);
+    background-image: url(../img/todo.png);
   }
   .experiment:nth-child(2) .experiment-image {
-    background-image: url(../img/search-context.gif);
+    background-image: url(../img/guess.jpg);
   }
   .experiment:last-child .experiment-image {
-    background-image: url(../img/x-times.gif);
+    background-image: url(../img/loading.PNG);
   }
 }
 @media only screen and (max-width: 63.9375em) {
   .experiment:first-child .experiment-image {
-    background-image: url(../img/codepen-loader.png);
+    background-image: url(../img/todo.png);
   }
   .experiment:nth-child(2) .experiment-image {
-    background-image: url(../img/search-context.png);
+    background-image: url(../img/guess.jpg);
   }
   .experiment:last-child .experiment-image {
-    background-image: url(../img/x-times.png);
+    background-image: url(../img/loading.PNG);
   }
 }
 .experiment .experiment-title-area {
@@ -3067,7 +3068,7 @@ textarea {
 }
 .footer-links li {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 20px;
 }
 .footer-links li:last-child {
   margin-right: 0;
@@ -3121,11 +3122,9 @@ textarea {
 }
 @media only screen and (max-width: 31.875em) {
   .footer-links li {
-    float: left;
+    margin-right: 20px;
     clear: none;
-    width: 50%;
     margin-left: 0;
-    margin-right: 0;
   }
 }
 .js .main-hero-title {
@@ -3825,18 +3824,20 @@ main {
 .about-me-list li {
   float: left;
   clear: none;
-  width: 22.75%;
+  width: 30%;
   margin-left: 0;
   margin-right: 3%;
   position: relative;
   text-align: center;
+  margin-bottom: 8%;
+
 }
 .about-me-list li:last-child {
   margin-right: 0;
 }
 .about-me-list li .about-me-list-label {
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 0;
   width: 100%;
   -webkit-transform: translateY(5px);
@@ -3865,8 +3866,14 @@ main {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+.about-me-list li.html:hover svg path {
+  fill: #fd2121;
+}
 .about-me-list li.react:hover svg path {
   fill: #61dafb;
+}
+.about-me-list li.clone:hover svg path {
+  fill: #21565c;
 }
 .about-me-list li.uiux:hover svg path {
   fill: #26408b;
@@ -3974,7 +3981,9 @@ main {
   .about-contact .half-contact .contact-info {
     width: 85%;
   }
-  .about-me-list {
+}
+@media (max-width:310px){
+  .about-me-list{
     display: none;
   }
 }
